@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap');
+body {
+    font-family: 'Montserrat', sans-serif !important;
+    background: radial-gradient(circle at 25% 26%, #25c6f6 0%, #5b86e5 55%, #1b1e4b 100%) !important;
+    color: #f3f5f7 !important;
+    margin: 0;
+    min-height: 100vh;
+    background-attachment: fixed;
+}
+
+.stApp {
+    background: transparent !important;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 800;
+    font-size: 2.8rem !important;
+    margin: 1.6rem 0 1.3rem 0;
+    letter-spacing: -1.5px;
+    background: conic-gradient(from 135deg at 50% 50%, #44e7ec, #43dec8, #ffef98 30%, #ff6a00 68%, #ee7752 92%, #44e7ec 100%);
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    filter: drop-shadow(0 6px 40px #44e7ec33);
+}
+
+.section-card {
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 22px;
+    box-shadow: 0 9px 38px 0 #25c6f655, 0 2.5px 10px #1b1e4b33;
+    border: 1.7px solid #44e7ec66;
+    padding: 2.1rem 2rem 1.5rem 2rem;
+    margin-bottom: 2.1rem;
+    backdrop-filter: blur(5px);
+}
+
+.section-card h2,
+.section-card h3 {
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 700;
+    font-size: 1.28rem !important;
+    background: conic-gradient(from 45deg, #44e7ec, #ffef98 20%, #ff6a00 64%, #ee7752 100%);
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    letter-spacing: -1px;
+    filter: drop-shadow(0px 3px 16px #44e7ec22);
+    margin-left: -0.1em;
+    margin-bottom: 1.1em;
+}
+
+a {
+    color: #ff9800 !important;
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 2px solid #44e7ec80;
+    transition: color 0.15s, border 0.13s;
+}
+
+a:hover {
+    color: #44e7ec !important;
+    border-bottom: 2px solid #ff9800bb;
+    text-decoration: underline;
+}
+
+.stButton>button {
+    color: #fff !important;
+    background: linear-gradient(97deg, #ff9800 30%, #44e7ec 100%) !important;
+    border: none;
+    border-radius: 40px !important;
+    padding: 16px 44px !important;
+    font-weight: 800 !important;
+    font-size: 1.17rem !important;
+    letter-spacing: 1.2px;
+    box-shadow: 0 8px 28px 0 rgba(68, 231, 236, 0.15);
+    cursor: pointer;
+    transition: background 0.18s, box-shadow 0.17s, transform 0.17s cubic-bezier(.24, .77, .34, 1.05);
+}
+
+.stButton>button:hover {
+    background: linear-gradient(97deg, #43dec8 24%, #ff6a00 100%) !important;
+    box-shadow: 0 12px 38px #ff980030, 0 3px 14px #44e7ec30;
+    transform: scale(1.06);
+}
+
+.stFileUploader>div,
+.stSelectbox>div {
+    background: #23243c !important;
+    border: 2.2px solid #44e7ec66 !important;
+    color: #e8fcfc !important;
+    border-radius: 16px !important;
+    padding: 1.2rem 2.2rem !important;
+    font-size: 1.09rem;
+    box-shadow: 0 2.7px 10px rgba(68, 231, 236, .08);
+    margin-bottom: 0.9rem;
+    transition: box-shadow .15s, border .16s, background .15s;
+}
+
+.stFileUploader>div:hover,
+.stSelectbox>div:hover {
+    background: #1b1e4b !important;
+    border: 2.2px solid #ff9800 !important;
+    box-shadow: 0 7px 20px #44e7ec22;
+}
+
+.stMarkdown {
+    background: none !important;
+    color: #f3f5f7 !important;
+    font-size: 1.14rem !important;
+    padding: 0 !important;
+    margin-bottom: 1.1em !important;
+    box-shadow: none !important;
+    border: none !important;
+    text-align: left !important;
+}
+
+.stTable,
+.stDataFrame {
+    background: rgba(32, 36, 52, 0.97) !important;
+    color: #fafcff !important;
+    border-radius: 1.2em;
+    padding: 1.3em 1.8em 1.1em 1.5em !important;
+    margin-bottom: 1.2em !important;
+    box-shadow: 0 8px 36px rgba(68, 231, 236, .10);
+    border: 1.7px solid #44e7ec66;
+    font-size: 1.12rem !important;
+    transition: box-shadow .17s;
+}
+
+.stTable:hover,
+.stDataFrame:hover {
+    box-shadow: 0 16px 52px #43dec820, 0 3px 14px #23243c15;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: #23243c !important;
+    color: #e8fcfc !important;
+    border-radius: 14px !important;
+    box-shadow: 0 2px 16px #44e7ec18;
+    margin: 1.2em 0 1.7em 0;
+    font-size: 1.13rem !important;
+}
+
+th,
+td {
+    padding: 1.1em 1.5em !important;
+    border: none;
+    background: none !important;
+    text-align: left;
+}
+
+th {
+    font-weight: 800;
+    color: #44e7ec !important;
+    border-bottom: 2.5px solid #ff9800cc !important;
+    background: #1b1e4b !important;
+}
+
+tr:last-child td {
+    border-bottom: none !important;
+}
+
+ul,
+ol {
+    margin-left: 1.4em;
+    color: #f3f5f7 !important;
+    font-size: 1.13em;
+}
+
+li {
+    margin-bottom: 0.4em;
+    background: #1b1e4b;
+    border-radius: 0.4em;
+    padding: 0.44em 1.08em;
+    border-left: 5px solid #44e7ecbb;
+    transition: background 0.13s, border 0.13s, transform 0.11s;
+}
+
+li:hover {
+    background: #23243c;
+    border-left: 5px solid #ff9800;
+    transform: scale(1.03) translateX(2.3px);
+}
+
+::-webkit-scrollbar {
+    width: 9px;
+    background: #181c23;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(210deg, #44e7ec, #ff9800);
+    border-radius: 13px;
+}
